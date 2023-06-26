@@ -61,23 +61,39 @@ body{
 
 .buttons {
 margin-top: 2rem;
+display: flex;
+}
+
+#btn1{
+background-color: white;
+color: black;
+
+}
+
+#btn2{
+	
 }
 
 .buttons .btn {
 	color: white;
-	padding: 0.6rem 2rem;
+	padding: 0.4rem 2rem;
 	margin-right: .75rem;
 	font-weight: 600;
-	border-radius: 0.125rem;
+	border-radius: 0.4rem;
 	background: rgba(51,51,51,0.4);
 	font-family: inherit;
 	font-size: 100%;
 	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 }
 
 .buttons .btn i {
 	margin-right:0.5rem ;
+	font-size: 30px;
+	
 }
 
 .categorias{
@@ -159,13 +175,11 @@ margin-top: 2rem;
 	align-items: center;
 	position: sticky;
 	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: .5%;
 	padding-bottom: .5%;
+
 	
 
 }
