@@ -49,6 +49,7 @@ body{
 
 .banner .poster {
 	width: 450px;
+	padding-bottom: 1rem;
 }
 
 .banner .subtitle {
