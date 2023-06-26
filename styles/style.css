@@ -71,7 +71,7 @@ color: black;
 }
 
 #btn2{
-	
+
 }
 
 .buttons .btn {
@@ -93,20 +93,20 @@ color: black;
 .buttons .btn i {
 	margin-right:0.5rem ;
 	font-size: 30px;
-	
+
 }
 
 .categorias{
-	height: 200px;
+	height: 250px;
 
 }
 
 .categorias span {
-	 color:#e5e5e5 ;
-	 font-size: 18px;
-	 line-height:17px ;
-	 font-weight: 600;
-	 padding: 3rem;
+	color:#e5e5e5 ;
+	font-size: 18px;
+	line-height:17px ;
+	font-weight: 600;
+	padding: 3rem;
 }
 
 .slides {
@@ -120,7 +120,7 @@ color: black;
 }
 
 .slides .movie {
-	
+
 
 }
 
@@ -180,7 +180,7 @@ color: black;
 	padding-top: .5%;
 	padding-bottom: .5%;
 
-	
+
 
 }
 
@@ -195,7 +195,7 @@ font-size: .87rem;
 #navigator div {
 	display: flex;
 	align-items: center;
-	
+
 
 
 }
@@ -218,7 +218,7 @@ font-size: .87rem;
 	font-size: 0.9rem;
 	margin-right: 15px;
 	z-index: 1;
-	
+
 }
 
 #navlogo {
