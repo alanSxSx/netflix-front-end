@@ -195,8 +195,6 @@ body {
 	display: flex;
 	align-items: center;
 
-
-
 }
 
 #navigator a {
@@ -243,6 +241,7 @@ body {
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
+		padding-left: 0;
 	}
 
 	#navigator a {
@@ -280,19 +279,18 @@ body {
 		align-items: center;
 		justify-content: center;
 		background-color: black;
-		width: 21vw;
+		width: 100vw;
 		height: 9vh;
 		border-width: 0.5px;
 		margin-bottom: 2px;
 		border-radius: 5px;
+		position: relative;
+		top: 10vw;
 
 	}
 
 	.menuleft img {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
+		display: none;
 
 	}
 
@@ -302,9 +300,15 @@ body {
 
 	.menuright {
 		width: 100%;
-		align-items: flex-end;
-		justify-content: flex-end;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		z-index: -1;
 
+	}
+
+	.menuright img {
+		display: flex;
 	}
 
 	.menuright a {
@@ -333,12 +337,16 @@ body {
 
 	.banner {
 		align-items: center;
-		width: 60%;
-		margin-top: 20%;
+		margin-top: 0;
+		padding-left: 0;
+		height: 55%;
+
 
 	}
 
-	.banner img {}
+	.banner .poster {
+		width: 100%
+	}
 
 	.banner span {
 		display: none;
@@ -351,9 +359,6 @@ body {
 	.categorias span {
 		padding: 0;
 	}
-
-
-
 	.slides {
 		left: 0;
 	}
@@ -370,12 +375,12 @@ body {
 	}
 
 
+	.container{
+		height: 100vh;
+		background-size: contain;
+		background-repeat: no-repeat;
 
-
-
-
-
-
+	}
 
 
 
@@ -385,13 +390,13 @@ body {
 /* Celular */
 @media screen and (max-width: 320px) {
 
-	
+
 
 	.menuleft {
 		position: relative;
 		top: 60px;
 		left: 0px;
-		
+
 	}
 
 	.menuleft a {
@@ -414,7 +419,7 @@ body {
 		padding: 0;
 		position: absolute;
 		z-index: -1;
-		
+
 	}
 
 	.menuright img {
@@ -437,7 +442,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		margin: 0;
-		padding: 0;		
+		padding: 0;
 	}
 
 
@@ -446,7 +451,7 @@ body {
 		width: 300px;
 	}
 
-	
+
 
 
 }
