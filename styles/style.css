@@ -1,44 +1,42 @@
-*{
+* {
 	box-sizing: border-box;
 }
 
-body{
+body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: black;
 }
 
-.container{
+.container {
 	height: 100vh;
-	background-image: linear-gradient(
-		to bottom,
-		rgba(0,0,0,0.8) 0% ,
-		rgba(0,0,0,0.2) 20% ,
-		rgba(20,20,20,0.2) 80% ,
-		rgba(20,20,20,1) 100%
-	),
-	url(../media/img1.webp);
+	background-image: linear-gradient(to bottom,
+			rgba(0, 0, 0, 0.8) 0%,
+			rgba(0, 0, 0, 0.2) 20%,
+			rgba(20, 20, 20, 0.2) 80%,
+			rgba(20, 20, 20, 1) 100%),
+		url(../media/img1.webp);
 	background-size: cover;
 	/* padding: 0.26rem 0.75rem 0 0.75rem ; */
 
 }
 
-.hero{
+.hero {
 	width: 100%;
 	margin: 0 auto;
 	height: 100%;
 	/* padding: 0.3rem; */
 }
 
-.alinhamento{
+.alinhamento {
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0.26rem 0.75rem 0 0.75rem ;
+	padding: 0.26rem 0.75rem 0 0.75rem;
 }
 
-.banner{
+.banner {
 	height: 80%;
 	display: flex;
 	flex-direction: column;
@@ -60,19 +58,17 @@ body{
 }
 
 .buttons {
-margin-top: 2rem;
-display: flex;
+	margin-top: 2rem;
+	display: flex;
 }
 
-#btn1{
-background-color: white;
-color: black;
+#btn1 {
+	background-color: white;
+	color: black;
 
 }
 
-#btn2{
-
-}
+#btn2 {}
 
 .buttons .btn {
 	color: white;
@@ -80,7 +76,7 @@ color: black;
 	margin-right: .75rem;
 	font-weight: 600;
 	border-radius: 0.4rem;
-	background: rgba(51,51,51,0.4);
+	background: rgba(51, 51, 51, 0.4);
 	font-family: inherit;
 	font-size: 100%;
 	border: 0;
@@ -91,20 +87,20 @@ color: black;
 }
 
 .buttons .btn i {
-	margin-right:0.5rem ;
+	margin-right: 0.5rem;
 	font-size: 30px;
 
 }
 
-.categorias{
+.categorias {
 	height: 250px;
 
 }
 
 .categorias span {
-	color:#e5e5e5 ;
+	color: #e5e5e5;
 	font-size: 18px;
-	line-height:17px ;
+	line-height: 17px;
 	font-weight: 600;
 	padding: 3rem;
 }
@@ -119,10 +115,7 @@ color: black;
 
 }
 
-.slides .movie {
-
-
-}
+.slides .movie {}
 
 .slides .movie img {
 	max-width: 100%;
@@ -130,9 +123,10 @@ color: black;
 }
 
 .footer {
-	margin: 100px auto 0 ;
+	margin: 100px auto 0;
 	width: 80%;
-	color: #808080; ;
+	color: #808080;
+	;
 }
 
 .footer .social {
@@ -145,7 +139,7 @@ color: black;
 	padding-right: 2.5%;
 }
 
-.flex{
+.flex {
 	display: flex;
 	padding-bottom: 80px;
 }
@@ -182,14 +176,17 @@ color: black;
 	padding-bottom: .5%;
 	z-index: 10;
 
-
-
 }
 
-.menuleft,.menuright{
-display: flex;
-color: white;
-font-size: .87rem;
+.menuleft,
+.menuright {
+	display: flex;
+	color: white;
+	font-size: .87rem;
+}
+
+.menuright img {
+	display: none;
 }
 
 
@@ -236,4 +233,199 @@ font-size: .87rem;
 @font-face {
 	font-family: Netflix Sans;
 	src: url(../fontes/NetflixSans-Regular.otf) format('truetype');
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+	#navigator {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	#navigator a {
+		padding: 0;
+	}
+
+
+	.menuleft {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#menuleft {
+
+		display: none !important;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.5s ease, visibility 0.5s linear 0.5s;
+
+	}
+
+	#menuleft.active {
+
+		opacity: 1;
+		visibility: visible;
+		transition-delay: 0s;
+		display: flex !important;
+
+	}
+
+	.menuleft a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: black;
+		width: 21vw;
+		height: 9vh;
+		border-width: 0.5px;
+		margin-bottom: 2px;
+		border-radius: 5px;
+
+	}
+
+	.menuleft img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+	}
+
+	#navlogo {
+		padding: 0;
+	}
+
+	.menuright {
+		width: 100%;
+		align-items: flex-end;
+		justify-content: flex-end;
+
+	}
+
+	.menuright a {
+		margin-right: 10px;
+
+
+	}
+
+	.btn-menu {
+		width: 45px;
+		height: 40px;
+		position: absolute;
+		left: 10px;
+		top: 5px;
+		padding: 10px;
+		cursor: pointer;
+
+	}
+
+	.btn-menu span {
+		height: 3px;
+		display: block;
+		margin-bottom: 5px;
+		background-color: #ffffff;
+	}
+
+	.banner {
+		align-items: center;
+		width: 60%;
+		margin-top: 20%;
+
+	}
+
+	.banner img {}
+
+	.banner span {
+		display: none;
+	}
+
+	.categorias {
+		height: 150px;
+	}
+
+	.categorias span {
+		padding: 0;
+	}
+
+
+
+	.slides {
+		left: 0;
+	}
+
+	.footer {
+		margin: 0;
+		width: 100%;
+	}
+
+	.footer div {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Celular */
+@media screen and (max-width: 320px) {
+
+	
+
+	.menuleft {
+		position: relative;
+		top: 60px;
+		left: 0px;
+		
+	}
+
+	.menuleft a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: black;
+		width: 110vw;
+		height: 9vh;
+		border-width: 0.5px;
+		margin-bottom: 2px;
+		border-radius: 5px;
+	}
+
+	.menuleft img {
+		display: none;
+	}
+
+	
+
+	.menuright {
+		padding: 0;
+		position: absolute;
+		z-index: -1;
+		
+	}
+
+	.menuright img {
+		display: flex;
+	}
+
+	#navigator {
+		padding: 0;
+		margin: 0;
+	}
+
 }
