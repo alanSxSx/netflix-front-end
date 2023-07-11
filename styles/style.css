@@ -392,64 +392,12 @@ body {
 
 
 
-	.menuleft {
-		position: relative;
-		top: 60px;
-		left: 0px;
 
-	}
-
-	.menuleft a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: black;
-		width: 110vw;
-		height: 9vh;
-		border-width: 0.5px;
-		margin-bottom: 2px;
-		border-radius: 5px;
-	}
-
-	.menuleft img {
-		display: none;
-	}
-
-	.menuright {
-		padding: 0;
-		position: absolute;
-		z-index: -1;
-
-	}
 
 	.menuright img {
 		display: flex;
 	}
 
-	#navigator {
-		padding: 0;
-		margin: 0;
-	}
-
-	.alinhamento {
-		margin: 0;
-		padding: 0;
-	}
-
-	.banner{
-		display: flex;
-		width: 100vw;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-		padding: 0;
-	}
-
-
-
-	.banner .poster {
-		width: 300px;
-	}
 
 
 
