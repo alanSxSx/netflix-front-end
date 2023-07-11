@@ -254,6 +254,8 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-color: red;
+		margin-top: 8vw;
 	}
 
 	#menuleft {
@@ -282,10 +284,10 @@ body {
 		width: 100vw;
 		height: 9vh;
 		border-width: 0.5px;
-		margin-bottom: 2px;
+		/* margin-bottom: 2px; */
 		border-radius: 5px;
 		position: relative;
-		top: 10vw;
+		top: 0vw;
 
 	}
 
@@ -341,7 +343,6 @@ body {
 		padding-left: 0;
 		height: 55%;
 
-
 	}
 
 	.banner .poster {
@@ -350,6 +351,18 @@ body {
 
 	.banner span {
 		display: none;
+	}
+
+	.buttons {
+		margin: 0;
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+	.btn {
+		width: 100%;
+
 	}
 
 	.categorias {
@@ -391,11 +404,42 @@ body {
 @media screen and (max-width: 320px) {
 
 
+	.menuleft {
+		margin-top: 15vw;
+		background-color: red;
+	}
+	.menuleft a {
+		top: 0vw;
+		margin: 0;
+	}
 
+	.menuright a:nth-child(3){
+		display: none;
+	}
 
+	.menuright svg:nth-child(4){
+		display: none;
+	}
 
 	.menuright img {
 		display: flex;
+	}
+
+	.banner {
+		width: 100%;
+	}
+
+	.buttons {
+		margin: 0;
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+
+	.btn {
+		width: 100%;
+
 	}
 
 
